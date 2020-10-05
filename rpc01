@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-05T06:58:02.560Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="cu8fpT0r4WhVunHHrSSE" version="13.7.7" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-05T07:42:45.237Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36" etag="tS5SbPGYqD4950ZW3W7n" version="13.7.7" type="github">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
     <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -33,6 +33,47 @@
         </mxCell>
         <mxCell id="yv48IhbG0SgNplGuuw8H-11" value="网络通信" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="374" y="190" width="66" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-12" value="userService" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="115" y="460" width="230" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-13" value="orderService" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=right;" vertex="1" parent="1">
+          <mxGeometry x="530" y="450" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-14" value="orderApi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="490" y="530" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-19" value="网络通信" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="374" y="450" width="66" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-20" value="版本2 ：使用springboot以及注解实现" style="rounded=1;whiteSpace=wrap;html=1;align=right;" vertex="1" parent="1">
+          <mxGeometry x="350" y="340" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="yv48IhbG0SgNplGuuw8H-16" target="yv48IhbG0SgNplGuuw8H-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="471" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-21" value="springBoot" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="170" y="460" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-16" value="proxy&lt;br&gt;socket" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="240" y="470" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="yv48IhbG0SgNplGuuw8H-22" target="yv48IhbG0SgNplGuuw8H-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-22" value="springBoot" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="545" y="460" width="160" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-23" value="proxy&lt;br&gt;socket" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="600" y="470" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-27" value="1.使用自定义注解，对要实现远程调用的方法进行标记；&lt;br&gt;2.spring启动完毕后，会发布一个ContextRefreshedEvent，进行后续的处理，将1标记的并存入容器中；&lt;br&gt;3.socket的监听对象接收到请求后，对参数解析并从容器中获取对应方法，传入参数，通过代理对象，执行并返回值" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="480" y="620" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="yv48IhbG0SgNplGuuw8H-28" value="1.对加了自定义远程调用注解的service进行处理，创建的实际上是一个代理对象，当进行调用的时候，实际上通过的socket将代理的参数进行请求并返回，" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="80" y="620" width="330" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
